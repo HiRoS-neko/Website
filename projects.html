@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="auto-scaling-disabled">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="viewport" content="width=device-width"/>
+
+    <!-- Favicon and title -->
+    <link rel="icon" href="img/favico.png">
+    <title>Kyle Giammarco - Projects</title>
+
+    <!-- Halfmoon CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet"/>
+    <!--
+      Or,
+      Use the following (no variables, supports IE11):
+      <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet" />
+      Learn more: https://www.gethalfmoon.com/docs/customize/#notes-on-browser-compatibility
+    -->
+</head>
+
+<body data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="false" data-set-preferred-mode-onload="true">
+<!-- Modals go here -->
+<!-- Reference: https://www.gethalfmoon.com/docs/modal -->
+
+<!-- Page wrapper start -->
+<div class="page-wrapper with-navbar">
+
+    <nav class="navbar">
+        <!-- Reference: https://www.gethalfmoon.com/docs/navbar -->
+        <a href="#" class="navbar-brand">
+            <img src="img/light.svg" alt="..." class="hidden-lm">
+            <img src="img/dark.svg" alt="..." class="hidden-dm">
+            Kyle Giammarco
+        </a>
+
+        <!-- Navbar nav -->
+        <ul class="navbar-nav d-flex">
+            <!-- d-none = display: none, d-md-flex = display: flex on medium screens and up (width > 768px) -->
+            <li class="nav-item active">
+                <a href="projects.html" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Sidebar overlay -->
+    <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+
+    <!-- Sidebar start -->
+    <div class="sidebar">
+        <div class="sidebar-menu">
+
+            <!-- TOC Here -->
+            <a href="https://ho-ly-games.com/minimaze.html" class="sidebar-title">MiniMaze <em
+                    class="sidebar-title text-right font-weight-light font-size-12">2020</em> </a>
+            <div class="sidebar-divider"></div>
+            <a href="#" class="sidebar-link">About</a>
+            <a href="https://play.google.com/store/apps/details?id=co.giammar.MiniMaze" class="sidebar-link">Get</a>
+            <br/>
+
+            <a href="projects/walk-with-me.html" class="sidebar-title">Walk With Me <em
+                    class="sidebar-title text-right font-weight-light font-size-12">2019-2020</em> </a>
+            <div class="sidebar-divider"></div>
+            <a href="#" class="sidebar-link">About</a>
+            <a href="#" class="sidebar-link">Media</a>
+            <br/>
+
+            <a href="projects/heist.html" class="sidebar-title">Heist<em
+                    class="sidebar-title text-right font-weight-light font-size-12">2018-2019</em> </a>
+            <div class="sidebar-divider"></div>
+            <a href="#" class="sidebar-link">About</a>
+            <a href="#" class="sidebar-link">Media</a>
+            <br/>
+
+            <a href="projects/walk-with-me.html" class="sidebar-title">Other Work</a>
+            <div class="sidebar-divider"></div>
+            <br/>
+        </div>
+    </div>
+    <!-- Sidebar end -->
+
+    <!-- Content wrapper start -->
+    <div class="content-wrapper">
+        <!--
+          Add your page's main content here
+          Examples:
+          1. https://www.gethalfmoon.com/docs/content-and-cards/#building-a-page
+          2. https://www.gethalfmoon.com/docs/grid-system/#building-a-dashboard
+        -->
+
+        <div class="container-fluid">
+            <div class="row justify-content-around">
+                <div class="col-sm-8 col-md-5 col-lg-3 col-xlg-1  content card">
+                    <img
+                            src="https://play-lh.googleusercontent.com/sYg7NXiMMDQxDWHeurxqtVv3okDmoPlyAa4hHiYIW6WsofXRyW0cBIxBanAFro50cQ=s360-rw"
+                            class="img-fluid rounded w-full">
+                    <h1 class="content-title text-center">
+                        MiniMaze <em class="text-right font-weight-light font-size-14">2020</em>
+                    </h1>
+                    <p>
+                        A 2D physics based maze game.
+                    </p>
+                    <div class="text-right">
+                        <!-- text-right = text-align: right -->
+                        <a href="https://ho-ly-games.com/minimaze.html" class="btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="col-sm-8 col-md-5 col-lg-3 col-xlg-1 content card">
+                    <img src="img/WalkWithMe_HiRes_Logo_White.jpg" class="hidden-lm img-fluid rounded w-full">
+                    <img src="img/WalkWithMe_HiRes_Logo_Dark.PNG" class="hidden-dm img-fluid rounded w-full">
+                    <h1 class="content-title text-center">
+                        Walk With Me <em class="text-right font-weight-light font-size-14">2019-2020</em>
+                    </h1>
+                    <p>
+                        A co-operative, 3D, isometric, adventure game.
+                    </p>
+                    <div class="text-right">
+                        <!-- text-right = text-align: right -->
+                        <a href="projects/walk-with-me.html" class="btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="col-sm-8 col-md-5 col-lg-3 col-xlg-1  content card">
+                    <img src="img/heist_logo.png" class="img-fluid rounded w-full">
+                    <h1 class="content-title text-center">
+                        Heist <em class="text-right font-weight-light font-size-14">2018-2019</em>
+                    </h1>
+                    <p>
+                        A 3D top-down co-optional PvPvE, stealth and combat focused bank heist.
+                    </p>
+                    <div class="text-right">
+                        <!-- text-right = text-align: right -->
+                        <a href="projects/heist.html" class="btn">Read more</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-8 col-md-8 col-lg-5 col-xlg-2  content card m-auto">
+                    <h1 class="content-title text-center">
+                        Other Work
+                    </h1>
+                    <p>
+                        Collection of other things that aren't part of larger projects.
+                    </p>
+                    <div class="text-right">
+                        <!-- text-right = text-align: right -->
+                        <a href="projects/other-work.html" class="btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content wrapper end -->
+
+</div>
+<!-- Page wrapper end -->
+
+<!-- Halfmoon JS -->
+<script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+</body>
+
+</html>
