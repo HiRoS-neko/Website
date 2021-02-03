@@ -20,6 +20,7 @@
       <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet" />
       Learn more: https://www.gethalfmoon.com/docs/customize/#notes-on-browser-compatibility
     -->
+    <script src="https://kit.fontawesome.com/efec0dc3e9.js" crossorigin="anonymous"></script>
 </head>
 
 <body data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="false" data-set-preferred-mode-onload="true">
@@ -38,7 +39,7 @@
         </a>
 
         <!-- Navbar nav -->
-        <ul class="navbar-nav d-flex">
+        <ul class="navbar-nav d-none d-sm-flex">
             <!-- d-none = display: none, d-md-flex = display: flex on medium screens and up (width > 768px) -->
             <li class="nav-item">
                 <a href="/projects.html" class="nav-link">Projects</a>
@@ -47,9 +48,23 @@
                 <a href="/about.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-                <a href="/contact.html" class="nav-link">Contact</a>
+                <a href="/contact.html" class="nav-link active">Contact</a>
             </li>
         </ul>
+        <div class="hidden-sm-and-up ml-auto">
+            <div class="nav-item dropdown with-arrow">
+                <a class="nav-link" data-toggle="dropdown" id="nav-link-dropdown-toggle">
+                    <i class="fa fa-bars ml-5" aria-hidden="true"></i> <!-- ml-5= margin-left: 0.5rem (5px) -->
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="nav-link-dropdown-toggle">
+                    <a href="/projects" class="dropdown-item">Projects</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/about.html" class="dropdown-item">About</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/contact.html" class="dropdown-item">Contact</a>
+                </div>
+            </div>
+        </div>
     </nav>
 
 
@@ -74,15 +89,34 @@
         </nav>
 
         <div class="container-fluid">
-            <div class="content d-flex justify-content-center flex-column">
-                <div class="content-title text-center font-size-24 text-monospace m-20">
-                    Under Construction
+            <h1 class="text-center font-weight-bolder">
+                Contact Me
+            </h1>
+            <div class="content row justify-content-around">
+                <div class="content card shadow-lg w-200">
+                    <h1 class="content-title text-center">Email</h1>
+                    <a href="mailto:kyle@giammar.co" class="btn btn-lg btn-block" role="button">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
                 </div>
-                <a href="index.html" class="btn btn-primary m-auto">
-                    <div class="text-capitalize">
-                        Take Me Home
-                    </div>
-                </a>
+                <div class="content card shadow-lg w-200">
+                    <h1 class="content-title text-center">LinkedIn</h1>
+                    <a href="https://www.linkedin.com/in/kyle-giammarco/" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-block" role="button">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="content card shadow-lg w-200">
+                    <h1 class="content-title text-center">Github</h1>
+                    <a href="https://github.com/hiros-neko" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-block" role="button">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="content card shadow-lg w-200">
+                    <h1 class="content-title text-center">GitLab</h1>
+                    <a href="https://gitlab.com/hiros" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-block" role="button">
+                        <i class="fa fa-gitlab" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
