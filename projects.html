@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width"/>
 
     <!-- Favicon and title -->
-    <link rel="icon" href="img/favico.png">
+    <link rel="icon" href="/img/favico.png">
     <title>Kyle Giammarco - Projects</title>
 
     <!-- Halfmoon CSS -->
@@ -31,9 +31,9 @@
 
     <nav class="navbar">
         <!-- Reference: https://www.gethalfmoon.com/docs/navbar -->
-        <a href="index.html" class="navbar-brand">
-            <img src="img/light.svg" alt="Fox Logo" class="hidden-lm">
-            <img src="img/dark.svg" alt="Fox Logo" class="hidden-dm">
+        <a href="/index.html" class="navbar-brand">
+            <img src="/img/light.svg" alt="Fox Logo" class="hidden-lm">
+            <img src="/img/dark.svg" alt="Fox Logo" class="hidden-dm">
             Kyle Giammarco
         </a>
 
@@ -41,13 +41,13 @@
         <ul class="navbar-nav d-flex">
             <!-- d-none = display: none, d-md-flex = display: flex on medium screens and up (width > 768px) -->
             <li class="nav-item active">
-                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="/projects.html" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-                <a href="about.html" class="nav-link">About</a>
+                <a href="/about.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
             </li>
         </ul>
     </nav>
@@ -67,10 +67,16 @@
           1. https://www.gethalfmoon.com/docs/content-and-cards/#building-a-page
           2. https://www.gethalfmoon.com/docs/grid-system/#building-a-dashboard
         -->
+        <nav aria-label="breadcrumb navigation">
+            <ul class="breadcrumb m-15 font-size-16 font-weight-bold text-monospace">
+                <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                <li class="breadcrumb-item active"><a href="/projects.html">Projects</a></li>
+            </ul>
+        </nav>
 
         <div class="container-fluid">
             <div class="row justify-content-around">
-                <div class="col-sm-8 col-md-5 col-lg-3 col-xlg-1  content card">
+                <div class="col-sm-8 col-md-5 col-lg-3 col-xlg-1  content card  shadow-lg">
                     <img
                             src="https://play-lh.googleusercontent.com/sYg7NXiMMDQxDWHeurxqtVv3okDmoPlyAa4hHiYIW6WsofXRyW0cBIxBanAFro50cQ=s360-rw"
                             class="img-fluid rounded w-full" alt="MiniMaze Logo">
@@ -86,9 +92,11 @@
                     </div>
                 </div>
 
-                <div class="col-sm-8 col-md-5 col-lg-3 col-xlg-1 content card">
-                    <img src="img/WalkWithMe_HiRes_Logo_White.jpg" class="hidden-lm img-fluid rounded w-full" alt="Walk With Me Logo">
-                    <img src="img/WalkWithMe_HiRes_Logo_Dark.PNG" class="hidden-dm img-fluid rounded w-full" alt="Walk With Me Logo">
+                <div class="col-sm-8 col-md-5 col-lg-3 col-xlg-1 content card shadow-lg">
+                    <img src="img/WalkWithMe_HiRes_Logo_White.jpg" class="hidden-lm img-fluid rounded w-full"
+                         alt="Walk With Me Logo">
+                    <img src="img/WalkWithMe_HiRes_Logo_Dark.PNG" class="hidden-dm img-fluid rounded w-full"
+                         alt="Walk With Me Logo">
                     <h1 class="content-title text-center">
                         Walk With Me <em class="text-right font-weight-light font-size-14">2019-2020</em>
                     </h1>
@@ -97,11 +105,11 @@
                     </p>
                     <div class="text-right">
                         <!-- text-right = text-align: right -->
-                        <a href="projects/walk-with-me.html" class="btn">Read more</a>
+                        <a href="/projects/walk-with-me.html" class="btn">Read more</a>
                     </div>
                 </div>
 
-                <div class="col-sm-8 col-md-5 col-lg-3 col-xlg-1  content card">
+                <div class="col-sm-8 col-md-5 col-lg-3 col-xlg-1  content card shadow-lg">
                     <img src="img/heist_logo.png" class="img-fluid rounded w-full" alt="Heist Logo">
                     <h1 class="content-title text-center">
                         Heist <em class="text-right font-weight-light font-size-14">2018-2019</em>
@@ -111,7 +119,7 @@
                     </p>
                     <div class="text-right">
                         <!-- text-right = text-align: right -->
-                        <a href="projects/heist.html" class="btn">Read more</a> <!-- TODO change to projects/heist.html -->
+                        <a href="/projects/heist.html" class="btn">Read more</a>
                     </div>
                 </div>
 
@@ -126,7 +134,8 @@
                     </p>
                     <div class="text-right">
                         <!-- text-right = text-align: right -->
-                        <a href="under-contruction.html" class="btn">Read more</a> <!-- TODO change to projects/other-work.html -->
+                        <a href="under-contruction.html" class="btn">Read more</a>
+                        <!-- TODO change to projects/other-work.html -->
                     </div>
                 </div>
             </div>

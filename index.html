@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width"/>
 
     <!-- Favicon and title -->
-    <link rel="icon" href="img/favico.png">
+    <link rel="icon" href="/img/favico.png">
     <title>Kyle Giammarco</title>
 
     <!-- Halfmoon CSS -->
@@ -31,9 +31,9 @@
 
     <nav class="navbar">
         <!-- Reference: https://www.gethalfmoon.com/docs/navbar -->
-        <a href="index.html" class="navbar-brand active">
-            <img src="img/light.svg" alt="Fox Logo" class="hidden-lm">
-            <img src="img/dark.svg" alt="Fox Logo" class="hidden-dm">
+        <a href="/index.html" class="navbar-brand active">
+            <img src="/img/light.svg" alt="Fox Logo" class="hidden-lm">
+            <img src="/img/dark.svg" alt="Fox Logo" class="hidden-dm">
             Kyle Giammarco
         </a>
 
@@ -41,13 +41,13 @@
         <ul class="navbar-nav d-flex">
             <!-- d-none = display: none, d-md-flex = display: flex on medium screens and up (width > 768px) -->
             <li class="nav-item">
-                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="/projects.html" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-                <a href="about.html" class="nav-link">About</a>
+                <a href="/about.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
             </li>
         </ul>
     </nav>
@@ -66,16 +66,95 @@
           2. https://www.gethalfmoon.com/docs/grid-system/#building-a-dashboard
         -->
 
-        <div class="container-fluid">
-            <div class="content d-flex justify-content-center flex-column">
-                <div class="content-title text-center font-size-24 text-monospace m-20">
-                    Under Construction
-                </div>
-                <a href="projects.html" class="btn btn-primary m-auto">
-                    <div class="text-capitalize">
-                        Take Me Home
+
+        <nav aria-label="breadcrumb navigation">
+            <ul class="breadcrumb m-15 font-size-16 font-weight-bold text-monospace">
+                <li class="breadcrumb-item active"><a href="/index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <div class="content w-three-quarter w-xl-half d-flex justify-content-center flex-column m-auto">
+            <h1 class="text-center font-weight-bolder">
+                Kyle Giammarco
+                <br/>
+                <sub>
+                    Game Programmer & Software Developer
+                </sub>
+            </h1>
+
+            <h3 class="text-center">
+                Projects
+            </h3>
+            <div class="row justify-content-center border-bottom">
+                <div class="col-sm-8 col-md-5 col-lg-3 col-xlg-1  content card shadow-lg">
+                    <img
+                            src="https://play-lh.googleusercontent.com/sYg7NXiMMDQxDWHeurxqtVv3okDmoPlyAa4hHiYIW6WsofXRyW0cBIxBanAFro50cQ=s360-rw"
+                            class="img-fluid rounded w-full" alt="MiniMaze Logo">
+                    <h1 class="content-title text-center">
+                        MiniMaze <em class="text-right font-weight-light font-size-14">2020</em>
+                    </h1>
+                    <p>
+                        A 2D physics based maze game.
+                    </p>
+                    <div class="text-right">
+                        <!-- text-right = text-align: right -->
+                        <a href="https://ho-ly-games.com/minimaze.html" class="btn">Read more</a>
                     </div>
-                </a>
+                </div>
+
+                <div class="col-sm-8 col-md-5 col-lg-3 col-xlg-1 content card shadow-lg">
+                    <img src="img/WalkWithMe_HiRes_Logo_White.jpg" class="hidden-lm img-fluid rounded w-full"
+                         alt="Walk With Me Logo">
+                    <img src="img/WalkWithMe_HiRes_Logo_Dark.PNG" class="hidden-dm img-fluid rounded w-full"
+                         alt="Walk With Me Logo">
+                    <h1 class="content-title text-center">
+                        Walk With Me <em class="text-right font-weight-light font-size-14">2019-2020</em>
+                    </h1>
+                    <p>
+                        A co-operative, 3D, isometric, adventure game.
+                    </p>
+                    <div class="text-right">
+                        <!-- text-right = text-align: right -->
+                        <a href="/projects/walk-with-me.html" class="btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="col-sm-8 col-md-5 col-lg-3 col-xlg-1  content card shadow-lg">
+                    <img src="img/heist_logo.png" class="img-fluid rounded w-full" alt="Heist Logo">
+                    <h1 class="content-title text-center">
+                        Heist <em class="text-right font-weight-light font-size-14">2018-2019</em>
+                    </h1>
+                    <p>
+                        A 3D top-down co-optional PvPvE, stealth and combat focused bank heist.
+                    </p>
+                    <div class="text-right">
+                        <!-- text-right = text-align: right -->
+                        <a href="/projects/heist.html" class="btn">Read more</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-5 col-xl-2 content card">
+                    <h1 class="content-title text-center">
+                        About
+                    </h1>
+                    <div class="text-right">
+                        <!-- text-right = text-align: right -->
+                        <a href="about.html" class="btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="col-10 col-md-5 col-xl-2  content card">
+                    <h1 class="content-title text-center">
+                        Contact
+                    </h1>
+                    <div class="text-right">
+                        <!-- text-right = text-align: right -->
+                        <a href="contact.html" class="btn">Contact Me</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

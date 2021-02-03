@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width"/>
 
     <!-- Favicon and title -->
-    <link rel="icon" href="img/favico.png">
+    <link rel="icon" href="/img/favico.png">
     <title>Kyle Giammarco - Projects</title>
 
     <!-- Halfmoon CSS -->
@@ -31,9 +31,9 @@
 
     <nav class="navbar">
         <!-- Reference: https://www.gethalfmoon.com/docs/navbar -->
-        <a href="index.html" class="navbar-brand">
-            <img src="img/light.svg" alt="Fox Logo" class="hidden-lm">
-            <img src="img/dark.svg" alt="Fox Logo" class="hidden-dm">
+        <a href="/index.html" class="navbar-brand">
+            <img src="/img/light.svg" alt="Fox Logo" class="hidden-lm">
+            <img src="/img/dark.svg" alt="Fox Logo" class="hidden-dm">
             Kyle Giammarco
         </a>
 
@@ -41,13 +41,13 @@
         <ul class="navbar-nav d-flex">
             <!-- d-none = display: none, d-md-flex = display: flex on medium screens and up (width > 768px) -->
             <li class="nav-item">
-                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="/projects.html" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-                <a href="about.html" class="nav-link">About</a>
+                <a href="/about.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
             </li>
         </ul>
     </nav>
@@ -65,13 +65,19 @@
           1. https://www.gethalfmoon.com/docs/content-and-cards/#building-a-page
           2. https://www.gethalfmoon.com/docs/grid-system/#building-a-dashboard
         -->
+        <nav aria-label="breadcrumb navigation">
+            <ul class="breadcrumb m-15 font-size-16 font-weight-bold text-monospace">
+                <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                <li class="breadcrumb-item active"><a href="/404.html">404</a></li>
+            </ul>
+        </nav>
 
         <div class="container-fluid">
             <div class="content d-flex justify-content-center flex-column">
                 <div class="content-title text-center font-size-24 text-monospace m-20">
                     Error 404 : Page not found
                 </div>
-                <a href="index.html" class="btn btn-primary m-auto">
+                <a href="/index.html" class="btn btn-primary m-auto">
                     <div class="text-capitalize">
                         Take Me Home
                     </div>
